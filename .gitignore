@@ -1,0 +1,18 @@
+.DS_Store
+
+# Wordpress
+/site/wp-content/upgrade/
+/site/wp-content/uploads/
+
+# Composer
+/vendor
+/site/wordpress
+/site/wp-content/plugins/**
+/site/wp-content/themes/**
+
+# Repeat following pattern for all themes and plugins which are not Composer-controlled
+#!/site/wp-content/plugins/plugin-name/
+#!/site/wp-content/plugins/plugin-name/**
+
+# Database dumps for Docker
+*.sql.gz
